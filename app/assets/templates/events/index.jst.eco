@@ -1,0 +1,15 @@
+<h1>Looper</h1>
+
+<button id="filter">Shuffle</button>
+
+<ul>
+<% for event in @events.models: %>
+  <li>
+	<%= event.get('name') %>
+	<%= event.get('description') %>
+	<%= event.get('person') %>
+	<img src=<%= event.get('person_photo') %> alt="person_photo">
+  	<img src=<%= event.get('event_photo') %> alt="event_photo"> 
+  </li>
+<% end %>
+</ul>
