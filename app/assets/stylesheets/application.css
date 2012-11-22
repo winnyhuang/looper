@@ -24,19 +24,98 @@ body {
 	background-color:#A9A9A9;
 }
 #page{
-	margin-top:-40px;
+	margin-top:-25px;
 }
 #age{
 	border: 1px solid gray;
 	border-radius: 3px;
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	margin-left:200px;
 	background-color:#fff;
+}
+#end_float{
+	clear:both;
 }
 .vertical_line{
 	border-left:3px solid #a9a9a9;
 	height:50px;
-	margin-left:240px;
+	margin-left:230px;
+	float:left;
 }
+.circle
+{
+	border-left:3px solid #a9a9a9;
+	height:70px;
+	border-left:3px solid #a9a9a9;
+	border-top:3px solid #a9a9a9;
+	border-right:3px solid #a9a9a9;
+	border-bottom:3px solid #a9a9a9;
+	margin-left:195px;
+	border-radius:50%;
+	width:70px;
+	float:left;
+}
+.circle_img{
+	margin-left:27px;
+	margin-top:28px;
+}
+
+#circle_gp1
+{
+	border-left:3px solid #a9a9a9;
+	height:70px;
+	border-left:3px solid #a9a9a9;
+	border-top:3px solid #a9a9a9;
+	border-right:3px solid #a9a9a9;
+	border-bottom:3px solid #a9a9a9;
+	border-radius:50%;
+	width:70px;
+	margin-left:600px;
+	float:left;
+	
+}
+
+#circle_gp2
+{
+	border-left:3px solid #a9a9a9;
+	height:70px;
+	border-left:3px solid #a9a9a9;
+	border-top:3px solid #a9a9a9;
+	border-right:3px solid #a9a9a9;
+	border-bottom:3px solid #a9a9a9;
+	border-radius:50%;
+	width:70px;
+	float:left;
+	
+}
+
+#circle_gp3
+{
+	border-left:3px solid #a9a9a9;
+	height:70px;
+	border-left:3px solid #a9a9a9;
+	border-top:3px solid #a9a9a9;
+	border-right:3px solid #a9a9a9;
+	border-bottom:3px solid #a9a9a9;
+	border-radius:50%;
+	width:70px;
+	float:left;
+	
+}
+
+#circle_gp4
+{
+	border-left:3px solid #a9a9a9;
+	height:70px;
+	border-left:3px solid #a9a9a9;
+	border-top:3px solid #a9a9a9;
+	border-right:3px solid #a9a9a9;
+	border-bottom:3px solid #a9a9a9;
+	border-radius:50%;
+	width:70px;
+	float:left;
+	
+}
+
 
