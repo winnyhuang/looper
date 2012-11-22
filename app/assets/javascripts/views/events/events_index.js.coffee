@@ -5,7 +5,6 @@ class Looper.Views.EventsIndex extends Backbone.View
 	initialize: ->
 		@collection.on('reset', @render, this)
 		@collection.on('change', @render, this)
-		@collection.on('shuffle', @shuffle, this)
 
 	render: ->
 		$(@el).html(@template(events: @collection))
@@ -16,5 +15,4 @@ class Looper.Views.EventsIndex extends Backbone.View
 
 	shuffle: (event) ->
 		event.preventDefault()
-		@collection = @collection.shuffle()
-		
+		console.log(@collection.shuffle())
