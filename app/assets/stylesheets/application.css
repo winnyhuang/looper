@@ -34,4 +34,9 @@ body {
 	margin-left:200px;
 	background-color:#fff;
 }
+.vertical_line{
+	border-left:3px solid #a9a9a9;
+	height:50px;
+	margin-left:240px;
+}
 
