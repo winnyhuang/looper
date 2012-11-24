@@ -1,7 +1,10 @@
 <header> Looper</header>
 
 <body>
-	
+	<div style="margin-top:-17px"> <!-- wrapper -->
+		
+			<div class="vertical_line" style="float:left">
+	</div>
 	<div id="age"> <!--should have an onload that gets the age -->	
 			<div style="height:30px; margin-top:-18px">
 				<h3 align="center" style="padding-top:7px">age</h3>
@@ -12,10 +15,6 @@
 			</div>
 	</div>
 		
-	<div style="margin-top:-17px"> <!-- wrapper -->
-		
-			<div class="vertical_line" style="float:left">
-			</div>
 		
 			<h1 style="margin-left:860px"> Connect With Grandparents </h1>
 		
@@ -107,6 +106,21 @@
   		<input type="submit" name="sa" value="Search" />
 		</form>
 		
+		<div class="slider">
+			<div id="user_prf" class="circle">
+				<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+			</div>
+			
+			<div class="event_circle">
+				<img class="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+			</div>
+		</div>
+		
+		<form class="radio_wrapper">
+			<input type="radio" name="event" class="slider_button" />
+			<input type="radio" name="event" class="slider_button" />​
+			<input type="radio" name="event" class="slider_button" />​
+		</form>
 		
 	</div>
 	
