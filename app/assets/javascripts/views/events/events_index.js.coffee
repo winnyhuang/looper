@@ -12,7 +12,9 @@ class Looper.Views.EventsIndex extends Backbone.View
 
 	events:
 		'click #filter': 'shuffle'
-
+		
 	shuffle: (event) ->
-		event.preventDefault()
-		console.log(@collection.shuffle())
+		@collection = new Looper.Collections.Events(@collection.shuffle())
+		tempName = @collection.toArray()[0].get("name")
+		@collection.toArray()[0].set("name", tempName + "a")
+		@collection.toArray()[0].set("name", tempName)
