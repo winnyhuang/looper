@@ -12,20 +12,34 @@
  *= require_tree .
 */
 
+
+/** colors**
+
+teal blue: #55c3DC rgb(85,195,220)
+light blue: #E7F3EF rbg(231, 243, 239)
+dark gray: #73726D rgb (115, 114, 109)
+red: #E24B2C rgb (226,75,44)
+
+**/
+
+
+
+html{
+	background-color:#444444;
+}
+
+
 body { 
 	font: 12px/18px "Lucida Grande", Geneva, Arial, Verdana, sans-serif; 
-	background-color:#fff; 
 	color:#333; 
-	/*margin:0 auto;
-  	width:1040px;*/
+	margin:0 auto;
+  	width:1440px;
 	}
-#header{
+	
+header{
 	height:100px;
-	background-color:#A9A9A9;
 }
-#page{
-	margin-top:-25px;
-}
+
 #age{
 	border: 1px solid gray;
 	border-radius: 3px;
@@ -34,45 +48,49 @@ body {
 	margin-left:200px;
 	background-color:#fff;
 }
+
 #end_float{
 	clear:both;
 }
+
 .vertical_line{
-	border-left:3px solid #a9a9a9;
-	height:50px;
-	margin-left:230px;
+	border-left:2px solid #4FC3DE;
+	height:1000px;
+	position:absolute;
+	left:230px;
+	z-index:-100;
 }
 .circle
 {
-	border-left:3px solid #a9a9a9;
+	border: 1px solid gray;
 	height:70px;
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
-	margin-left:195px;
 	border-radius:50%;
 	width:70px;
 	float:left;
+	background-color:#fff;
+	z-index:10;
 }
 .circle_img{
-	margin-left: -10px;
-	margin-top: -9px;
+	z-index:100;
+	height:70px;
+	width:70px;
+}
+
+#user_prf{
+	margin-left:195px;
 }
 
 #filter_bar{
-	margin-left:205px;
-	margin-top:-80px;
+	margin-left:195px;
+	margin-top:10px;
 	height:90px;
 }
 .filter{
 	float:left;
 }
+
 .button{
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
+	border:1px solid #a9a9a9;
 	width:50px;
 	height:5px;
 	border-radius:40%;
@@ -86,61 +104,13 @@ body {
 	margin-top:40px;
 }
 
-#circle_gp1
-{
-	border-left:3px solid #a9a9a9;
-	height:70px;
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
-	border-radius:50%;
-	width:70px;
-	margin-left:600px;
-	float:left;
-	
+#connect_grandparents{
+	margin-left:60%;
 }
 
-#circle_gp2
+#circle_gp1, #circle_gp2, #circle_gp3, #circle_gp4
 {
-	border-left:3px solid #a9a9a9;
-	height:70px;
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
-	border-radius:50%;
-	width:70px;
 	float:left;
+	margin-left:10px;
 	
 }
-
-#circle_gp3
-{
-	border-left:3px solid #a9a9a9;
-	height:70px;
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
-	border-radius:50%;
-	width:70px;
-	float:left;
-	
-}
-
-#circle_gp4
-{
-	border-left:3px solid #a9a9a9;
-	height:70px;
-	border-left:3px solid #a9a9a9;
-	border-top:3px solid #a9a9a9;
-	border-right:3px solid #a9a9a9;
-	border-bottom:3px solid #a9a9a9;
-	border-radius:50%;
-	width:70px;
-	float:left;
-	
-}
-
-
