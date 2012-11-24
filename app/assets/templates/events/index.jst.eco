@@ -1,6 +1,7 @@
 <h1>Looper</h1>
 
-<button id="filter">Shuffle</button>
+<button id="shuffle">Shuffle</button>
+<button id="filter">Filter</button>
 
 <ul>
 <% for event in @events.models: %>
