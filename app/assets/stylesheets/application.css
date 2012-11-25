@@ -31,12 +31,18 @@ html{
 
 body { 
 	font: 12px/18px "Lucida Grande", Geneva, Arial, Verdana, sans-serif; 
+	font-weight:lighter;
 	color:#fff; 
 	margin:0 auto;
   	width:1440px;
-	line-height:1.5em;
-	}
+}
 	
+p{
+	margin:0;
+	padding:0;
+	line-height:1.5em;
+}
+
 header{
 	height:100px;
 }
@@ -44,21 +50,20 @@ header{
 #age{
 	margin-left:185px;
 	margin-top:-20px;
-	background-color:#4FC3DE;
+	background-color:#575757;
 	text-align:center;
 }
 
 #age > *:nth-child(1){
-	padding-top:15%;
+	padding-top:10%;
 	text-align:center;
-	font-size:14px;
+	font-size:1.5em;
+	color:#E0E0E0;
 }
 
 #age > *:nth-child(2){
 	padding-top:10%;
-	margin-top:-7px;
-	margin-left:2px;
-	font-size:3em;
+	font-size:2.5em;
 }
 
 #end_float{
@@ -83,12 +88,9 @@ header{
 
 .circle
 {
-	/*border: 1px solid gray;*/
 	height:70px;
 	border-radius:50%;
 	width:70px;
-	float:left;
-	/*background-color:#fff;*/
 	z-index:10;
 }
 .circle_img{
@@ -100,6 +102,17 @@ header{
 #profile{
 	margin-left:195px;
 	margin-top:300px;
+	cursor:pointer;
+}
+
+#profile p{
+	margin-left:-110px;
+	margin-top:-50px;
+	font-size:10px;
+	color:#A8A8A8 ;
+}
+#profile p font{
+	color:#fff;
 }
 
 #filter_bar{
@@ -133,33 +146,55 @@ header{
 	
 }
 
-#search{
-	margin-left:900px;
-	margin-top:-50px;
-}
 
 #date{
 	margin-top:10px;
 	margin-left:185px;
 	text-align:center;
 	background-color:#eb4c0a;
-	font-size:3em;
+	font-size:2em;
 }
 
 #date > *:nth-child(1){
 	padding-top:20%;
 }
 
-#date > *:nth-child(2){
-	
+#status{
+	height:100px;
+	margin-left:40%;
+	background-color:rgba(0,0,0,0.2);
+	border-radius:3px;
 }
 
-#status{
-	width:100%;
-	height:100px;
-	margin-left:60%;
+#status img{
+	padding:15px 0px 10px 20px;
+}
+
+#status p{
+	font-size:16px;
+	color:gray;
+	margin-top:-60px;
+	margin-left:15%;
+}
+
+#status p font{
+	color:#55c3DC;
+}
+
+#status .circle {
+	background-color:rgba(0,0,0,0.4);
+	text-align:center;
 	margin-top:10px;
-	background-color:#fff;
+	margin-left:40%;
+}
+
+#status .circle:hover{
+	background-color:rgba(0,0,0,0.6);
+	cursor:pointer;
+}
+#status .circle p{
+	font-size:2em;
+	padding-top:20%;
 }
 
 #time{
@@ -175,7 +210,7 @@ header{
 #time p{
 	font-size:12px;
 	font-weight:5;
-	margin-top:25%;
+	padding-top:25%;
 }
 
 span{
@@ -185,7 +220,7 @@ span{
 #event_box{
 	margin-top:-300px;
 	margin-left:232px;
-	z-index:-1;
+	z-index:-10;
 	width:100%;
 	height:500px;
 	background-color:rgba(255,255,255,0.1);
@@ -196,40 +231,47 @@ span{
 	margin-top:50px;
 	margin-left:50px;
 }
+
 #year{
-	font-size:40px;
+	font-size:4em;
+	color:#888888;
 	margin-left:450px;
 	margin-top:-400px
 }
 #experience{
-	font-size:20px;
+	font-size:1.5em;
 	margin-left:450px;
 
 }
+
 #info_origin{
 	font-size:15px;
 	margin-left:450px;
-	margin-top:-10px;
+	color:#BBBBBB;
+	margin-top:-5px;
 }
+
 #gpchat_text{
-	font-size:22px;
+	font-size:1em;
 	margin-left:450px;
 	margin-top:70px;
 }
 #chat_space{
 	margin-left:450px;
 }
+
 #chat{
 	background-color:#eb4c0a;
 	margin-left:10px;
 	float:left;
 }
+
 #call,#email,#skype{
 	font-size:17px;
 	text-align:center;
 	margin-top:25px;
 }
 #how_to{
-	margin-top:100px;
+	padding:20px;
 	margin-left:145px;
 }
