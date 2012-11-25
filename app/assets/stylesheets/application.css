@@ -55,7 +55,7 @@ header{
 
 .vertical_line{
 	border-left:2px solid #4FC3DE;
-	height:1000px;
+	height:2000px;
 	position:absolute;
 	left:230px;
 	z-index:-100;
@@ -76,8 +76,9 @@ header{
 	width:70px;
 }
 
-#user_prf{
+#profile{
 	margin-left:195px;
+	margin-top:300px;
 }
 
 #filter_bar{
@@ -127,35 +128,51 @@ header{
 	height:50px;
 	background-color:#fff
 }
-.slider{
-	width:100%;
-	height:120px;
-	margin-top:100px;
-	background-color:#fff;
-	padding-top:40px;
-}
-
-.event_circle{
+#time{
 	border: 1px solid gray;
-	height:100px;
+	height:70px;
 	border-radius:50%;
-	width:100px;
-	float:left;
-	background-color:#fff;
-	z-index:10;
+	width:70px;
+	background-color:#4FC3DE;
+	margin-left:195px;
+	margin-top:10px;
+}
+#time_num{
+	font-size:17px;
+	margin-left:28px;
+	margin-top:15px
+}
+#time_period{
+	font-size:17px;
 	margin-top:-15px;
-	margin-left:5px;
+	margin-left:23px
 }
-.event_img{
- /*fill in */
+#event_box{
+	margin-top:-300px;
+	margin-left:232px;
+	z-index:-1;
+	width:100%;
+	height:500px;
+	background-color:#fff;
 }
+#event_img{
+	height:400px;
+	width:400px;
+	margin-top:50px;
+	margin-left:50px;
+}
+#year{
+	font-size:40px;
+	margin-left:600px;
+	margin-top:-400px
+}
+#experience{
+	font-size:20px;
+	margin-left:600px;
 
-.radio_wrapper{
-	height:20px;
-	width:100px;
-	margin-left:500px;
 }
-
-.slider_button{
- /*fill in*/
+#info_origin{
+	font-size:15px;
+	margin-left:600px;
+	margin-top:-10px;
 }
