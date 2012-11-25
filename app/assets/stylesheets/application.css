@@ -31,9 +31,10 @@ html{
 
 body { 
 	font: 12px/18px "Lucida Grande", Geneva, Arial, Verdana, sans-serif; 
-	color:#333; 
+	color:#fff; 
 	margin:0 auto;
   	width:1440px;
+	line-height:1.5em;
 	}
 	
 header{
@@ -41,12 +42,23 @@ header{
 }
 
 #age{
-	margin-left:195px;
+	margin-left:185px;
+	margin-top:-20px;
 	background-color:#4FC3DE;
+	text-align:center;
 }
-#age_value{
+
+#age > *:nth-child(1){
+	padding-top:15%;
+	text-align:center;
+	font-size:14px;
+}
+
+#age > *:nth-child(2){
+	padding-top:10%;
 	margin-top:-7px;
 	margin-left:2px;
+	font-size:3em;
 }
 
 #end_float{
@@ -60,14 +72,23 @@ header{
 	left:230px;
 	z-index:-100;
 }
+
+.large_circle{
+	height:90px;
+	width:90px;
+	border-radius:50%;
+	
+
+}
+
 .circle
 {
-	border: 1px solid gray;
+	/*border: 1px solid gray;*/
 	height:70px;
 	border-radius:50%;
 	width:70px;
 	float:left;
-	background-color:#fff;
+	/*background-color:#fff;*/
 	z-index:10;
 }
 .circle_img{
@@ -102,6 +123,7 @@ header{
 
 #connect_grandparents{
 	margin-left:40%;
+	margin-top:10px;
 }
 
 #circle_gp1, #circle_gp2, #circle_gp3, #circle_gp4
@@ -117,38 +139,56 @@ header{
 }
 
 #date{
-	margin-top:50px;
-	margin-left:195px;
+	margin-top:10px;
+	margin-left:185px;
+	text-align:center;
 	background-color:#eb4c0a;
+	font-size:3em;
 }
+
+#date > *:nth-child(1){
+	padding-top:20%;
+}
+
+#date > *:nth-child(2){
+	
+}
+
 #status{
 	width:100%;
 	height:100px;
 	margin-left:60%;
-	margin-top:100px;
+	margin-top:10px;
 	background-color:#fff;
 }
+
 #time{
-	border: 1px solid gray;
 	height:70px;
 	border-radius:50%;
 	width:70px;
 	background-color:#4FC3DE;
 	margin-left:195px;
 	margin-top:10px;
+	text-align:center;
 }
-#time_num{
-	font-size:17px;
-	margin-left:5px;
-	margin-top:15px
+
+#time p{
+	font-size:12px;
+	font-weight:5;
+	margin-top:25%;
 }
+
+span{
+	display:block;
+}
+
 #event_box{
 	margin-top:-300px;
 	margin-left:232px;
 	z-index:-1;
 	width:100%;
 	height:500px;
-	background-color:#fff;
+	background-color:rgba(255,255,255,0.1);
 }
 #event_img{
 	height:400px;
@@ -158,26 +198,26 @@ header{
 }
 #year{
 	font-size:40px;
-	margin-left:600px;
+	margin-left:450px;
 	margin-top:-400px
 }
 #experience{
 	font-size:20px;
-	margin-left:600px;
+	margin-left:450px;
 
 }
 #info_origin{
 	font-size:15px;
-	margin-left:600px;
+	margin-left:450px;
 	margin-top:-10px;
 }
 #gpchat_text{
 	font-size:22px;
-	margin-left:600px;
+	margin-left:450px;
 	margin-top:70px;
 }
 #chat_space{
-	margin-left:595px;
+	margin-left:450px;
 }
 #chat{
 	background-color:#eb4c0a;
