@@ -22,7 +22,10 @@ red: #E24B2C rgb (226,75,44)
 
 **/
 
-
+#logo{
+	height:100px;
+	padding:20px;
+}
 
 html{
 	background-color:#444444;
