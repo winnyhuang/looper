@@ -10,7 +10,7 @@
 	</div>
 		
 	<div id="status">
-		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+		<img class="circle_img" src="<%= asset_path( 'max-prf.png' ) %>" />
 		<p>You have <font>1 event</font> today </p>
 		<div class="circle"><p>></p></div>
 	</div>
@@ -24,8 +24,8 @@
 	
 	<div id="profile" class="circle">
 		
-		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-		<p>align timeline to <font> Tom </font></p>
+		<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>" />
+		<p>align timeline to <font> Raul</font></p>
 	</div>
 	<div id="end_float"></div>
 	
@@ -36,48 +36,58 @@
 	<div id="end_float"></div>
 	
 	<div id="event_box">
-		<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-		<p id="year">1956</p>	
-		<p id="experience">First Car: Ford Dodge</p>	
-		<p id="info_origin">PERSONAL ACCOUNT</p>	
-		<p id="gpchat_text">chat with Grandpa Raul</p>
-		
-		<div id="chat_space">
-			<div id="chat" class="circle">
-				<p id="call"> call </p>
-			</div>	
-			<div id="chat" class="circle">
-				<p id="email"> email </p>
-			</div>
-			<div id="chat" class="circle">
-				<p id="skype"> skype </p>
-			</div>
-		</div>
-		
-		<div id="end_float"></div>
-		<p id="how_to"> click photo for full screen experience <p>
-	</div>
+		<div><img id="event_img" src="<%= asset_path( 'event_pumpgas.png' ) %>" />
+		<p id="how_to"> click for full screen experience <p></div>
 	
-	<div id="connect_grandparents">		
-		<div id="circle_gp1" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+		<div id ="event_info">
+			<p id="year">1956</p>	
+			<p id="experience">Gas Prices Rise to 0.25 cents</p>	
+			<p id="info_origin">WASHINGTON POST</p>
+			
+		
+			<div id="chat_space">
+				<p>Chat with Grandpa Raul</p>
+			
+				<div id="chat">
+					<p> call </p>
+				</div>	
+			
+				<div id="email">
+					<p> email </p>
+				</div>
+			
+				<div id="email">
+					<p> skype </p>
+				</div>
+				
+				<div id="end_float"></div>
+			</div> <!--chat_space-->
+			
+		</div> <!--event_info-->
+	</div> <!---event_box-->
+
+	
+	<div id="select_grandparent">		
+		<div id="circle_gp1" class="circle selected">
+			<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp2" class="circle">
 			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp3" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+			<img class="circle_img" src="<%= asset_path( 'martha-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp4" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+			<img class="circle_img" src="<%= asset_path( 'sarah-prf.png' ) %>"/>
 		</div>
-	</div>
+	</div> <!---select grandparent-->
+	
 	<div id="end_float"></div>
 
 		
 	<div id="profile" class="circle">
 		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-		<p>align timeline to <font> Tom </font></p>
+		<p>align timeline to <font> Raul </font></p>
 	</div>
 	<div id="end_float"></div>
 	
@@ -86,40 +96,54 @@
 	</div>
 	
 	<div id="end_float"></div>
+	
 	<div id="event_box">
-		<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />	
-		<p id="year">1956</p>	
-		<p id="experience">First Car: Ford Dodge</p>	
-		<p id="info_origin">Personal Account</p>	
-		<p id="gpchat_text">Chat With Grandpa Raul</p>
-		<div id="chat_space">
-			<div id="chat" class="circle">
-				<p id="call"> Call </p>
-			</div>	
-			<div id="chat" class="circle">
-				<p id="email"> Email </p>
-			</div>
-			<div id="chat" class="circle">
-				<p id="skype"> Skype </p>
-			</div>
-		</div>
-		<div id="end_float"></div>
+		<img id="event_img" src="<%= asset_path( 'event_pumpgas.png' ) %>" />
 		<p id="how_to"> click photo for full screen experience <p>
-	</div>
-	<div id="connect_grandparents">		
-		<div id="circle_gp1" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+	
+		<div id ="event_info">
+			<p id="year">1956</p>	
+			<p id="experience">First Car: Ford Dodge</p>	
+			<p id="info_origin">PERSONAL ACCOUNT</p>
+			
+		
+			<div id="chat_space">
+				<p>Chat with Grandpa Raul</p>
+			
+				<div id="chat">
+					<p> call </p>
+				</div>	
+			
+				<div id="email">
+					<p> email </p>
+				</div>
+			
+				<div id="email">
+					<p> skype </p>
+				</div>
+				
+				<div id="end_float"></div>
+			</div> <!--chat_space-->
+			
+		</div> <!--event_info-->
+	</div> <!---event_box-->
+
+	
+	<div id="select_grandparent">		
+		<div id="circle_gp1" class="circle selected">
+			<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp2" class="circle">
 			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp3" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+			<img class="circle_img" src="<%= asset_path( 'martha-prf.png' ) %>"/>
 		</div>
 		<div id="circle_gp4" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+			<img class="circle_img" src="<%= asset_path( 'sarah-prf.png' ) %>"/>
 		</div>
-	</div>
+	</div> <!---select grandparent-->
+	
 	<div id="end_float"></div>
 	
 
