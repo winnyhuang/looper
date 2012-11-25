@@ -1,33 +1,53 @@
 <header> Looper</header>
 
 <body>
-	<div style="margin-top:-17px"> <!-- wrapper -->
-		
-			<div class="vertical_line" style="float:left">
-	</div>
-	<div id="age"> <!--should have an onload that gets the age -->	
-			<div style="height:30px; margin-top:-18px">
-				<h3 align="center" style="padding-top:7px">age</h3>
-			</div>
-		
-			<div align="center" style="margin-top:9px"
-				<font size="6" id="age_value" >21</font>
-			</div>
-	</div>
-		
-		
-			<h1 style="margin-left:860px"> Connect With Grandparents </h1>
-		
+		<div class="vertical_line" style="float:left">
+		</div>
+		<div id="age" class="circle">
+				<p style="font-size:15px;margin-left:24px">age</p>
+				<p id="age_value" align="center">
+					<font size="6">21</font>
+				</p>
+		</div>
 	<div id="end_float"></div>
-	
-	<div> <!-- /wrapper -->
 		
-	<div> <!-- wrapper -->
+	<div id="date" class="circle">
+		<p id="time_num" align="center">
+			<font size="5">Dec</font>
+			<br> 
+			<font size="5">5</font>
+		</p>
+	</div>
 		
-		
-		
-		<div id="connect_grandparents">
-			
+	<div id="profile" class="circle">
+		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+	</div>
+	<div id="end_float"></div>
+	<div id="time" class="circle">
+		<p id="time_num" align="center">9 <br> AM</p>
+	</div>
+	<div id="end_float"></div>
+	<div id="event_box">
+		<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+		<p id="year">1956</p>	
+		<p id="experience">First Car: Ford Dodge</p>	
+		<p id="info_origin">Personal Account</p>	
+		<p id="gpchat_text">Chat With Grandpa Raul</p>
+		<div id="chat_space">
+			<div id="chat" class="circle">
+				<p id="call"> Call </p>
+			</div>	
+			<div id="chat" class="circle">
+				<p id="email"> Email </p>
+			</div>
+			<div id="chat" class="circle">
+				<p id="skype"> Skype </p>
+			</div>
+		</div>
+		<div id="end_float"></div>
+		<p id="how_to"> click photo for full screen experience <p>
+	</div>
+	<div id="connect_grandparents">		
 		<div id="circle_gp1" class="circle">
 			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
 		</div>
@@ -40,109 +60,58 @@
 		<div id="circle_gp4" class="circle">
 			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
 		</div>
-		</div> <!--connect grandparents-->
-		
-		<div id="end_float"></div>
-		
-  	</div> <!-- /wrapper -->
-		
-		<div class="vertical_line">
-		</div>
-		
-		<div> <!-- wrapper -->
-		
-	
-		
-		<div id="filter_bar">
-			
-			<div id="timescale_circle" class="circle">
-			</div>
-				
-			<div class="filter"> <!-- day -->
-				<div class="button">	
-				</div>
-				<font size="2" style="margin-left:15px;">day</font>
-			</div> 
-			
-			<hr class="link"> <!-- link -->
-			
-			<div class="filter"> <!-- week -->
-				<div class="button">	
-				</div>
-				<font size="2" style="margin-left:15px;">week</font>
-			</div> 
-			
-			<hr class="link"> <!-- link -->
-			
-			<div class="filter"> <!-- month -->
-				<div class="button">	
-				</div>
-				<font size="2"  style="margin-left:10px;" >month</font>
-			</div> 
-			<hr class="link"> <!-- link -->
-			
-			<div class="filter"> <!-- year -->
-				<div class="button">	
-				</div>
-				<font size="2"  style="margin-left:15px;" >year</font>
-			</div> 
-			
-		</div>
-		 
-		</div> <!-- /wrapper -->
-		<div id="end_float"></div>
-		
-		<div id="date">
-			<font size="5">Dec 5</font> <!-- unknown reason why css does not affect it-->
-		</div>
-		
-		<form id="search" action="http://google.com/cse">
-  		<input type="hidden" name="cx" value="YOUR SEARCH ENGINE ID goes here" />
-  		<input type="hidden" name="ie" value="UTF-8" />
-  		<input type="text" name="q" size="31" />
-  		<input type="submit" name="sa" value="Search" />
-		</form>
-		
-		<div id="profile" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-		</div>
-		<div id="end_float"></div>
-		<div id="time" class="circle">
-			<p id="time_num">9</p>
-			<p id="time_period">AM<p>
-		</div>
-		<div id="end_float"></div>
-		<div id="event_box">
-			<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-			<p id="year">1956</p>	
-			<p id="experience">First Car: Ford Dodge</p>	
-			<p id="info_origin">Personal Account</p>	
-		</div>
-
-		
-		<div id="profile" class="circle">
-			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
-		</div>
-		<div id="end_float"></div>
-		<div id="time" class="circle">
-			<p id="time_num">12</p>
-			<p id="time_period">PM<p>
-		</div>
-		<div id="end_float"></div>
-		<div id="event_box">
-			<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />	
-			<p id="year">1956</p>	
-			<p id="experience">First Car: Ford Dodge</p>	
-			<p id="info_origin">Personal Account</p>	
-		</div>
-		
 	</div>
+	<div id="end_float"></div>
+
+		
+	<div id="profile" class="circle">
+		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+	</div>
+	<div id="end_float"></div>
+	<div id="time" class="circle">
+		<p id="time_num" align="center">12 <br> PM</p>
+	</div>
+	<div id="end_float"></div>
+	<div id="event_box">
+		<img id="event_img" src="<%= asset_path( 'tom-prf.png' ) %>" />	
+		<p id="year">1956</p>	
+		<p id="experience">First Car: Ford Dodge</p>	
+		<p id="info_origin">Personal Account</p>	
+		<p id="gpchat_text">Chat With Grandpa Raul</p>
+		<div id="chat_space">
+			<div id="chat" class="circle">
+				<p id="call"> Call </p>
+			</div>	
+			<div id="chat" class="circle">
+				<p id="email"> Email </p>
+			</div>
+			<div id="chat" class="circle">
+				<p id="skype"> Skype </p>
+			</div>
+		</div>
+		<div id="end_float"></div>
+		<p id="how_to"> click photo for full screen experience <p>
+	</div>
+	<div id="connect_grandparents">		
+		<div id="circle_gp1" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+		</div>
+		<div id="circle_gp2" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+		</div>
+		<div id="circle_gp3" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+		</div>
+		<div id="circle_gp4" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+		</div>
+	</div>
+	<div id="end_float"></div>
 	
 
+	
 
-	
-	
-	<div id="container">Loading..</div> <!--where the events will populate-->
+<div id="container">Loading..</div> <!--where the events will populate-->
 		
 
 </body>

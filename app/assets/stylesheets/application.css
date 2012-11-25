@@ -41,12 +41,12 @@ header{
 }
 
 #age{
-	border: 1px solid gray;
-	border-radius: 3px;
-	width: 60px;
-	height: 60px;
-	margin-left:200px;
-	background-color:#fff;
+	margin-left:195px;
+	background-color:#4FC3DE;
+}
+#age_value{
+	margin-top:-7px;
+	margin-left:2px;
 }
 
 #end_float{
@@ -99,14 +99,9 @@ header{
 	margin-top:35px;
 }
 
-.link{
-	width:20px;
-	float:left;
-	margin-top:40px;
-}
 
 #connect_grandparents{
-	margin-left:60%;
+	margin-left:40%;
 }
 
 #circle_gp1, #circle_gp2, #circle_gp3, #circle_gp4
@@ -122,11 +117,9 @@ header{
 }
 
 #date{
-	margin-top:50px;
-	margin-left:180px;
-	width:100px;
-	height:50px;
-	background-color:#fff
+	margin-top:30px;
+	margin-left:195px;
+	background-color:#eb4c0a;
 }
 #time{
 	border: 1px solid gray;
@@ -139,13 +132,8 @@ header{
 }
 #time_num{
 	font-size:17px;
-	margin-left:28px;
+	margin-left:5px;
 	margin-top:15px
-}
-#time_period{
-	font-size:17px;
-	margin-top:-15px;
-	margin-left:23px
 }
 #event_box{
 	margin-top:-300px;
@@ -175,4 +163,26 @@ header{
 	font-size:15px;
 	margin-left:600px;
 	margin-top:-10px;
+}
+#gpchat_text{
+	font-size:22px;
+	margin-left:600px;
+	margin-top:70px;
+}
+#chat_space{
+	margin-left:595px;
+}
+#chat{
+	background-color:#eb4c0a;
+	margin-left:10px;
+	float:left;
+}
+#call,#email,#skype{
+	font-size:17px;
+	text-align:center;
+	margin-top:25px;
+}
+#how_to{
+	margin-top:100px;
+	margin-left:145px;
 }
