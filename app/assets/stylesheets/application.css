@@ -72,10 +72,18 @@ header{
 
 .vertical_line{
 	border-left:2px solid #4FC3DE;
-	height:2000px;
+	height:3000px;
 	position:absolute;
 	left:230px;
 	z-index:-100;
+
+}
+
+.vertical_line:hover{
+	cursor:pointer;
+	box-shadow: 0 0 10px rgba(85,195,220, 0.9);
+    -webkit-box-shadow: 0 0 10px rgba(85,195,220, 0.9); 
+    -moz-box-shadow: 0 0 10px rgba(85,195,220, 0.9);	
 }
 
 .large_circle{
@@ -163,16 +171,22 @@ header{
 	padding-top:20%;
 }
 
-#status{
+#status, #status_grandparents{
 	height:100px;
 	margin-left:40%;
 	background-color:rgba(0,0,0,0.2);
 	border-radius:3px;
 }
 
+
+#status_date p{
+	padding-top:20%;
+}
+
 #status img{
 	padding:15px 0px 10px 20px;
 }
+
 
 #status p{
 	font-size:16px;
@@ -185,18 +199,18 @@ header{
 	color:#55c3DC;
 }
 
-#status .circle {
+#status .circle, #status_grandparents .circle {
 	background-color:rgba(0,0,0,0.3);
 	text-align:center;
 	margin-top:10px;
 	margin-left:40%;
 }
 
-#status .circle:hover{
+#status .circle:hover, #status_grandparents .circle:hover{
 	background-color:rgba(0,0,0,0.6);
 	cursor:pointer;
 }
-#status .circle p{
+#status .circle p, #status_grandparents .circle p{
 	font-size:2em;
 	padding-top:20%;
 }
@@ -222,7 +236,7 @@ span{
 }
 
 #event_box{
-	margin-top:-300px;
+	margin-top:-400px;
 	margin-left:232px;
 	z-index:-10;
 	width:100%;
@@ -230,6 +244,15 @@ span{
 	background-color:rgba(255,255,255,0.1);
 }
 
+
+#user_event_box{
+	margin-top:-300px;
+	margin-left:232px;
+	z-index:-10;
+	width:100%;
+	height:500px;
+	background-color:rgba(255,255,255,0.1);
+}
 #event_info{
 	margin-left:8%;
 	margin-top:10%;
@@ -302,6 +325,57 @@ span{
 #chat:hover , #email:hover , #skype:hover{
 	background-color:rgba(226,75,44,1);
 	cursor:pointer;
+}
+
+/******** your events page ******/
+
+#user_event{
+	height:70px;
+	border-radius:50%;
+	width:70px;
+	background-color:#4FC3DE;
+	margin-left:195px;
+	margin-top:10px;
+}
+
+#user_event > *:nth-child(1){
+	padding-top:25%;
+	text-align:center;
+}
+
+#user_event > *:nth-child(2){
+	margin-left:110px;
+	margin-top:-40px;
+	width:400px;
+	font-size:2em;
+}
+
+#user_event > *:nth-child(3){
+	margin-left:110px;
+	width:400px;
+	font-size:1em;
+	color:#BBBBBB;
+}
+
+#status_date{
+	background-color: #E24B2C;
+	text-align:center;
+	font-size:1.5em;
+	height:70px;
+	width:70px;
+	border-radius:50%;
+}
+
+#status_grandparents div{
+	float:left;
+	margin-top:15px;
+	margin-left:20px;
+}
+
+#status_grandparents .circle{
+	margin-left:10px;
+	margin-top:15px;
+	color:gray;
 }
 
 
