@@ -15,6 +15,7 @@ class Looper.Views.EventsIndex extends Backbone.View
 		@p3Name = "La"
 		@p4 = true
 		@p4Name = "Fa"
+		console.log("test")
 
 	render: ->
 		$(@el).html(@template(events: @collection))
@@ -58,7 +59,14 @@ class Looper.Views.EventsIndex extends Backbone.View
 		@render()
 		
 	filterPerson: (collection) ->
-		nameFilter = (event) -> (@p1 && event.get("person") == @p1Name)  || (@p2 && event.get("person") == @p2Name) || (@p3 && event.get("person") == @p3Name) || (@p4 && event.get("person") == @p4Name)
+		p1 = @p1
+		p2 = @p2
+		p3 = @p3
+		p4 = @p4
+		p1Name = @p1Name
+		p2Name = @p2Name
+		p3Name = @p3Name
+		p4Name = @p4Name
+		nameFilter = (event) -> (p1 && event.get("person") == p1Name)  || (p2 && event.get("person") == p2Name) || (p3 && event.get("person") == p3Name) || (p4 && event.get("person") == p4Name)
 		return new Looper.Collections.Events(collection.filter nameFilter)
-		
 	
