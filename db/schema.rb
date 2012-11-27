@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20121121215944) do
     t.string   "person"
     t.string   "event_photo"
     t.string   "person_photo"
+	t.boolean "show"
   end
 
 end

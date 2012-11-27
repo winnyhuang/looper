@@ -1,3 +1,4 @@
+
 <div class="vertical_line" style="float:left">
 </div>
 	
@@ -10,7 +11,16 @@
 	<img class="circle_img" src="<%= asset_path( 'max-prf.png' ) %>" />
 	<p>You have <font>1 event</font> today </p>
 	<div class="circle"><p>></p></div>
+	
+<div id="grandparents" style="padding-top: 1.5em">
+	<img id="p1Toggle" class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>" />
+	<img id="p2Toggle" class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+	<img id="p3Toggle" class="circle_img" src="<%= asset_path( 'martha-prf.png' ) %>" />
+	<img id="p4Toggle" class="circle_img" src="<%= asset_path( 'sarah-prf.png' ) %>" />
 </div>
+</div>
+
+
 
 <div id="date" class="large_circle">
 	<p>Dec</p>
@@ -20,6 +30,8 @@
 <div id="end_float"></div>
 
 <%% for event in @events.models: %>
+	<%% show = event.get('show') %>
+	<%% if show: %>
 	<%% name = event.get('name') %>
 	<%% description = event.get('description') %>
 	<%% person = event.get('person') %>
@@ -68,6 +80,17 @@
 
 		</div> <!--event_info-->
 	</div> <!---event_box-->
+	<!---
+	<div id="select_grandparent">		
+	<div id="circle_gp1" class="circle selected">
+		<img class="circle_img" src=<%%= event.get('person_photo') %> alt="person_photo">
+	</div>
+	</div>
+	-->
+	</div>
+<div id="end_float"></div>
+
+	<%% end %>
 <%% end %>
 
 <div id="end_float"></div>
