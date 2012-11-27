@@ -1,0 +1,6 @@
+<%% for event in @events.models: %>
+	<%%= event.get('name') %>
+	<%%= event.get('description') %>
+	<%%= event.get('person') %>
+	<%%= event.get('date') %>
+<%% end %>

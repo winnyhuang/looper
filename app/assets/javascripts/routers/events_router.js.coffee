@@ -1,7 +1,9 @@
 class Looper.Routers.Events extends Backbone.Router
 	routes:
 		'': 'index'
+		'user': 'user'
 		'entries/:id': 'show'
+		
 		
 	initialize: ->
 	  @collection = new Looper.Collections.Events()
@@ -13,3 +15,7 @@ class Looper.Routers.Events extends Backbone.Router
 		
 	show: (id) ->
 		alert "Entry #{id}"
+		
+	user: ->
+		view = new Looper.Views.EventsUser(collection: @collection)
+		$('#container').html(view.render().el)
