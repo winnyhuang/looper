@@ -223,6 +223,11 @@ header{
 	text-decoration: none;
 }
 
+#status_grandparents.circle p a:visited, #status_grandparents .circle p a{
+	color:black;
+	text-decoration: none;
+}
+
 #time{
 	height:70px;
 	border-radius:50%;
