@@ -1,6 +1,22 @@
 <%% for event in @events.models: %>
-	<%%= event.get('name') %>
-	<%%= event.get('description') %>
 	<%%= event.get('person') %>
-	<%%= event.get('date') %>
 <%% end %>
+
+<div class="vertical_line" style="float:left">
+</div>
+
+<div id="age" class="large_circle">
+	<p>age</p>
+	<span>21</span>
+</div>
+
+<div id="status_grandparents">
+	<div id="status_date"><p>DEC</p><span>5</span></div>
+	<div id="grandparents">
+		<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>" />
+		<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+		<img class="circle_img" src="<%= asset_path( 'martha-prf.png' ) %>" />
+		<img class="circle_img" src="<%= asset_path( 'sarah-prf.png' ) %>" />
+	</div>
+	<div class="circle"><p>></p></div>
+</div>
