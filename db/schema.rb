@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121121215944) do
+ActiveRecord::Schema.define(:version => 20121127061008) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(:version => 20121121215944) do
     t.string   "person"
     t.string   "event_photo"
     t.string   "person_photo"
-	t.boolean "show"
+    t.boolean  "show"
+    t.string   "large_photo"
   end
 
 end

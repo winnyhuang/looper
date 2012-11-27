@@ -36,9 +36,9 @@
 	<%% description = event.get('description') %>
 	<%% person = event.get('person') %>
 	<%% date = event.get('date') %>
+	<%% large_photo = event.get('large_photo') %>
 	
 <div id="profile" class="circle">
-	
 	<img class="circle_img" src=<%%= event.get('person_photo') %> alt="person_photo">
 	<p><font> <%%= person %></font></p>
 </div>
@@ -51,8 +51,12 @@
 
 <div id="end_float"></div>	
 	<div id="event_box">
-		<div><img id="event_img" src=<%%= event.get('event_photo') %> alt="event_photo"> 
-		<p id="how_to"> click for full screen experience <p></div>
+		<div>
+			<a href="<%%= large_photo %>" >
+				<img id="event_img" src=<%%= event.get('event_photo') %> alt="event_photo"> 
+				<p id="how_to"> click for full screen experience <p>
+			</a>
+		</div>
 
 		<div id ="event_info">
 			<p id="year"><%%= date.slice(0,4) %></p>	
