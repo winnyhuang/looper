@@ -11,6 +11,8 @@
 //= require bootstrap
 //= require underscore
 //= require backbone
+//= require bxslider
+//= require easing1.3
 //= require looper
 //= require_tree ../templates
 //= require_tree ./models

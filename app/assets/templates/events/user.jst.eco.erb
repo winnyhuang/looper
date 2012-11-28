@@ -1,7 +1,8 @@
+<!--
 <%% for event in @events.models: %>
 	<%%= event.get('person') %>
 <%% end %>
-
+-->
 <div class="vertical_line" style="float:left">
 </div>
 
@@ -20,3 +21,236 @@
 	</div>
 	<div class="circle"><p><a href="">></a></p></div>
 </div>
+
+<div id="user_event" class="circle">	
+	<p>10<span>AM</span></p>
+	<p>Interview at Google</p>
+	<p>location: Mountain View, Ca </p>
+</div>
+
+<div id="select_grandparent" style="margin-top: -50px;  position:relative; z-index:10;">		
+	<div id="circle_gp1" class="circle selected">
+		<img class="circle_img" onClick="ShowRaul()" src="<%= asset_path( 'raul-prf.png' ) %>"/>
+	</div>
+	<div id="circle_gp2" class="circle">
+		<img class="circle_img" onClick="ShowTom()" src="<%= asset_path( 'tom-prf.png' ) %>"/>
+	</div>
+</div> <!---select grandparent-->
+
+<div id="end_float"></div>
+
+
+
+
+
+
+<div id = "RaulSlider" style="DISPLAY: block">
+<ul id="slider1">
+	<li>
+		<div id="profile" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>" />
+			<p><font> Raul </font></p>
+		</div>
+		<div id="end_float"></div>
+
+		<div id="time" class="circle">
+			<p>1959</p>
+		</div>
+
+		<div id="end_float"></div>
+
+		<div id="event_box">
+			<img id="event_img" src="<%= asset_path( 'event_ibm.png' ) %>" />
+			<p id="how_to"> click photo for full screen experience <p>
+
+			<div id ="event_info">
+				<p id="year">1959 <font style="margin-top:0; font-size:18px; display:block">age: 26</font></p>	
+				<p id="experience">Interview with IBM</p>	
+				<p id="info_origin">PERSONAL ACCOUNT</p>
+			
+				<div id="chat_space">
+					<p>Chat with Grandpa Raul</p>
+				
+					<div id="chat">
+						<p> call </p>
+					</div>	
+				
+					<div id="email">
+						<p> email </p>
+					</div>
+				
+					<div id="email">
+						<p> skype </p>
+					</div>
+					
+					<div id="end_float"></div>
+				</div> <!--chat_space-->
+				
+			</div> <!--event_info-->
+		</div> <!---event_box-->
+	</li>
+	<li>
+		<div id="profile" class="circle">
+			<img class="circle_img" src="<%= asset_path( 'raul-prf.png' ) %>" />
+			<p><font> Raul </font></p>
+		</div>
+		<div id="end_float"></div>
+
+		<div id="time" class="circle">
+			<p>1962</p>
+		</div>
+
+		<div id="end_float"></div>
+
+		<div id="event_box">
+			<img id="event_img" src="<%= asset_path( 'event_hp.png' ) %>" />
+			<p id="how_to"> click photo for full screen experience <p>
+
+			<div id ="event_info">
+				<p id="year">1962 <font style="margin-top:0; font-size:18px; display:block">age: 29</font></p>	
+				<p id="experience">Interview with HP</p>	
+				<p id="info_origin">PERSONAL ACCOUNT</p>
+			
+				<div id="chat_space">
+					<p>Chat with Grandpa Raul</p>
+				
+					<div id="chat">
+						<p> call </p>
+					</div>	
+				
+					<div id="email">
+						<p> email </p>
+					</div>
+				
+					<div id="email">
+						<p> skype </p>
+					</div>
+					
+					<div id="end_float"></div>
+				</div> <!--chat_space-->
+				
+			</div> <!--event_info-->
+		</div> <!---event_box-->
+	</li>
+</ul>
+</div>
+
+<div id = "TomSlider" style="display: block">
+<ul id="slider2">
+	<li style="display: block">
+		<div id="profile" class="circle" >
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+			<p><font> Tom </font></p>
+		</div>
+		<div id="end_float"></div>
+
+		<div id="time" class="circle">
+			<p>1996</p>
+		</div>
+
+		<div id="end_float"></div>
+
+		<div id="event_box">
+			<img id="event_img" src="<%= asset_path( 'event_fixcar.png' ) %>" />
+			<p id="how_to"> click photo for full screen experience <p>
+
+			<div id ="event_info">
+				<p id="year">1996 <font style="margin-top:0; font-size:18px; display:block">age: 26</font></p>	
+				<p id="experience">Fixed Larry Page's Car</p>	
+				<p id="info_origin">PERSONAL ACCOUNT</p>
+			
+				<div id="chat_space">
+					<p>Chat with Grandpa Tom</p>
+				
+					<div id="chat">
+						<p> call </p>
+					</div>	
+				
+					<div id="email">
+						<p> email </p>
+					</div>
+				
+					<div id="email">
+						<p> skype </p>
+					</div>
+					
+					<div id="end_float"></div>
+				</div> <!--chat_space-->
+				
+			</div> <!--event_info-->
+		</div> <!---event_box-->
+	</li>
+	<li style="display: block">
+		<div id="profile" class="circle" >
+			<img class="circle_img" src="<%= asset_path( 'tom-prf.png' ) %>" />
+			<p><font> Tom </font></p>
+		</div>
+		<div id="end_float"></div>
+
+		<div id="time" class="circle">
+			<p>1955</p>
+		</div>
+
+		<div id="end_float"></div>
+
+		<div id="event_box">
+			<img id="event_img" src="<%= asset_path( 'event_dinner2.png' ) %>" />
+			<p id="how_to"> click photo for full screen experience <p>
+
+			<div id ="event_info">
+				<p id="year">1955 <font style="margin-top:0; font-size:18px; display:block">age: 26</font></p>	
+				<p id="experience">Went to Eric Schmidt's Baby Shower</p>	
+				<p id="info_origin">PERSONAL ACCOUNT</p>
+			
+				<div id="chat_space">
+					<p>Chat with Grandpa Tom</p>
+				
+					<div id="chat">
+						<p> call </p>
+					</div>	
+				
+					<div id="email">
+						<p> email </p>
+					</div>
+				
+					<div id="email">
+						<p> skype </p>
+					</div>
+					
+					<div id="end_float"></div>
+				</div> <!--chat_space-->
+				
+			</div> <!--event_info-->
+		</div> <!---event_box-->
+	</li>
+</ul>
+</div>
+
+
+
+
+
+<script>
+function ShowRaul()
+{
+	document.getElementById('RaulSlider').style.display='block';
+	document.getElementById('TomSlider').style.display = 'none';
+}
+
+function ShowTom()
+{
+	document.getElementById('TomSlider').style.display='block';
+	document.getElementById('RaulSlider').style.display = 'none';
+}
+
+function loadSlider(){
+  $('#slider1').bxSlider({
+	mode: 'fade',
+  });
+  $('#slider2').bxSlider({
+	mode: 'fade',
+  });
+}
+
+$(document).ready(function() {loadSlider()});
+</script>

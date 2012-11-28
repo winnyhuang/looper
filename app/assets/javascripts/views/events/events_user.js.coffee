@@ -16,7 +16,8 @@ class Looper.Views.EventsUser extends Backbone.View
 		@p4 = true
 		@p4Name = "Fa"
 		console.log("test")
-
+		$("#slider1").bxSlider({mode: 'fade'})
+		
 	render: ->
 		$(@el).html(@template(events: @collection))
 		this
