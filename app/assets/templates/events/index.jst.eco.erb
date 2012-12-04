@@ -82,6 +82,13 @@
 				</div>
 
 				<div class="end_float"></div>
+				
+				<p style="position:relative;left:250px;top:-200px;"> <%%= event.get('related_event_1') %> </p>
+				<img class="<%%= event.get('related_event_1') %>" style="position:relative;left:250px;top:-200px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_1') %> alt="event_photo">
+				<p style="position:relative;left:450px;top:-430px;"> <%%= event.get('related_event_2') %> </p>
+				<img style="position:relative;left:450px;top:-430px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_2') %> alt="event_photo">
+				<p> <%%= event.get('related_event_3') %> </p>
+				<img style="position:relative;left:650px;top:-660px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_3') %> alt="event_photo">
 			</div> <!--chat_space-->
 
 		</div> <!--event_info-->
@@ -94,3 +101,16 @@
 <%% end %>
 
 <div class="end_float"></div>
+
+
+<script>
+	for (i=1; i<10; i++){
+		var klass = "." + i
+		$(klass).on('click', this, function(event){
+				var myClass = $(this).attr("class");
+				var id = "#" + myClass
+				alert(id);
+				$("html, body").animate({ scrollTop: $(id).offset().top }, 1000);
+		});
+	}
+</script>	
