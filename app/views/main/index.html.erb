@@ -1,9 +1,21 @@
-<header><img id="logo" src="<%= asset_path( 'logo.png' ) %>" /></header>
+<header><img class="2" id="logo" src="<%= asset_path( 'logo.png' ) %>" /></header>
+<header><img class="9" id="logo" src="<%= asset_path( 'logo.png' ) %>" /></header>
 
 <body>
 
 <div id="container">Loading..</div> <!--where the events will populate-->
-		
+
+<script>
+	for (i=1; i<10; i++){
+		var klass = "." + i
+		$(klass).on('click', this, function(event){
+				var myClass = $(this).attr("class");
+				var id = "#" + myClass
+				alert(id);
+				$("html, body").animate({ scrollTop: $(id).offset().top }, 1000);
+		});
+	}
+</script>	
 
 </body>
 <footer></footer>

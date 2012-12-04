@@ -38,6 +38,7 @@
 	<%% person = event.get('person') %>
 	<%% date = event.get('date') %>
 	<%% large_photo = event.get('large_photo') %>
+	<%% id = event.get('id') %>
 	
 <div id="profile" class="circle">
 	<img class="circle_img" src=<%%= event.get('person_photo') %> alt="person_photo">
@@ -51,10 +52,10 @@
 </div>
 
 <div class="end_float"></div>	
-	<div class="event_box" id="<%%= name %>">
+	<div class="event_box" id="<%%= id %>">
 		<div>
 			<a data-toggle="modal" href="https://photos-1.dropbox.com/t/0/AABEmrPsfE5CZ0Mtd7RDsM7PlCWpDeil1Pbwfhmobm-L7A/10/12162130/jpeg/1024x768/2/1354003200/0/2/5877232981_16f5ee4aea_b.jpg/ZLn91qrcuzE5FjSNymUySXA9Obe8HYK_F1JPsdt2V4k" >
-				<img class="event_img" src=<%%= event.get('event_photo') %> alt="event_photo"> 
+				<img id="event_img" class="<%%= name %>" src=<%%= event.get('event_photo') %> alt="event_photo"> 
 				<p class="how_to"> click for full screen experience <p>
 			</a>
 		</div>
