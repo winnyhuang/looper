@@ -107,7 +107,7 @@
 	<div id=<%%= 'pager' + sliderCount %>>
 		<%% eventIndex = 0 %>
 		<%% for event in eventList: %>
-			<a data-slide-index=<%%= eventIndex %> href=""><img src="<%%= event.get('person_photo') %>" /></a>
+			<a data-slide-index=<%%= eventIndex %> href=""><img class="slider-photo" src="<%%= event.get('person_photo') %>" /></a>
 			<%% eventIndex++ %>
 		<%% end %>
 	</div>
