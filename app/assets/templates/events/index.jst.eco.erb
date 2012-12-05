@@ -8,7 +8,7 @@
 </div>
 
 <div class="container">	
-	<div id="status">
+	<div id="status" class="1">
 		<img class="circle_img" src="<%= asset_path( 'max-prf.png' ) %>" />
 		<p>You have <font>1 event</font> today </p>
 	</div>
@@ -145,7 +145,6 @@
 		$(klass).on('click', this, function(event){
 				var myClass = $(this).attr("class");
 				var id = "#" + myClass
-				alert(id);
 				switch(id)
 				{
 				case '#1':
