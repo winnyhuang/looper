@@ -13,6 +13,7 @@
 //= require backbone
 //= require bxslider
 //= require easing1.3
+//= require fancybox
 //= require looper
 //= require_tree ../templates
 //= require_tree ./models
