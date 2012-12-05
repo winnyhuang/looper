@@ -182,6 +182,7 @@ header{
 	border-radius:3px;
 	position: relative;
 	left: 360px;
+	cursor: pointer;
 }
 
 
@@ -418,4 +419,8 @@ span{
 
 #pager3{
 	padding-left: 650px;;
+}
+
+.6 {
+	cursor: pointer;
 }
