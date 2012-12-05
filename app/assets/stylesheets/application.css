@@ -18,14 +18,16 @@
 
 teal blue: #55c3DC rgb(85,195,220)
 light blue: #E7F3EF rbg(231, 243, 239)
+dark dark gray: #383833;
 dark gray: #73726D rgb (115, 114, 109)
 red: #E24B2C rgb (226,75,44)
+light gray: #A8A8A8 
 
 **/
 
 #logo{
 	height:100px;
-	padding:20px;
+	padding:40px;
 }
 
 html{
@@ -59,15 +61,16 @@ header{
 }
 
 #age > *:nth-child(1){
-	padding-top: 2%;
+	padding-top: 8%;
 	text-align:center;
 	font-size:1.5em;
 	color:#E0E0E0;
 }
 
 #age > *:nth-child(2){
-	padding-top:10%;
+	padding-top:5%;
 	font-size:2.5em;
+	color:black ;
 }
 
 .end_float{
@@ -76,8 +79,9 @@ header{
 
 .vertical_line{
 	border-left:2px solid #4FC3DE;
-	height: 2910px;
+	height: 3500px;
 	position:absolute;
+	margin-top:10px;
 	left:230px;
 	z-index:-100;
 
@@ -91,8 +95,8 @@ header{
 }
 
 .large_circle{
-	height:90px;
-	width:90px;
+	height:100px;
+	width:100px;
 	border-radius:50%;
 	
 
@@ -119,11 +123,11 @@ header{
 #profile p{
 	margin-left: -39px;
 	margin-top:-50px;
-	font-size:10px;
-	color:#A8A8A8 ;
+	font-size:1em;
+	color: #73726D;
 }
 #profile p font{
-	color:#fff;
+	color: #A8A8A8;
 }
 
 #filter_bar{
@@ -168,14 +172,22 @@ header{
 	text-align:center;
 	background-color:#eb4c0a;
 	font-size:2em;
+	font-weight:20;
 }
 
 #date > *:nth-child(1){
-	padding-top: 7%;
+	padding-top: 10%;
+	color:white;
+}
+
+#date > *:nth-child(2){
+	margin-top: -7%;
+	color:#383838;
 }
 
 #status, #status_grandparents{
 	height:100px;
+	width:200%;
 	margin-left:40%;
 	background-color:rgba(0,0,0,0.2);
 	border-radius:3px;
@@ -198,7 +210,7 @@ header{
 	font-size:16px;
 	color:gray;
 	margin-top:-60px;
-	margin-left:15%;
+	margin-left:150px;
 }
 
 #status p font{
@@ -239,12 +251,16 @@ header{
 	margin-left:195px;
 	margin-top:10px;
 	text-align:center;
+	color:#383833;
 }
 
 #time p{
-	font-size:12px;
+	font-size:1em;
 	font-weight:5;
-	padding-top: 2%;
+	padding-top: 5%;
+}
+#time span{
+	margin-top:-10px;
 }
 
 span{
@@ -270,7 +286,7 @@ span{
 	background-color:rgba(255,255,255,0.1);
 }
 .event_info{
-	margin-left:8%;
+	margin-left:6%;
 	margin-top:10%;
 }
 
@@ -294,8 +310,9 @@ span{
 .year{
 	padding:0;
 	font-size:4em;
+	font-weight:300;
 	color:#888888;
-	margin-left:447px;
+	margin-left:430px;
 	margin-top:-400px
 }
 
@@ -304,13 +321,14 @@ span{
 }
 
 .experience{
-	font-size:1.5em;
+	font-size:2em;
 	margin-left:450px;
+	color:white;
 
 }
 
 .info_origin{
-	font-size:15px;
+	font-size:1.5em;
 	margin-left:450px;
 	color:#BBBBBB;
 	margin-top:-5px;
@@ -319,12 +337,13 @@ span{
 
 .chat_space{
 	width:250px;
-	margin-top:100px;
-	margin-left:450px;
+	margin-top:20px;
+	margin-left:440px;
 }
 
 .chat_space > *:nth-child(1){
-	font-size:1.4em;
+	font-size:1em;
+	margin-left:10px;
 	color:#BBBBBB;
 }
 
@@ -339,8 +358,9 @@ span{
 
 .chat p, .email p, .skype p{
 	font-size:1em;
+	color:white;
 	text-align:center;
-	margin-top:35%;
+	margin-top:30%;
 }
 
 
@@ -349,12 +369,26 @@ span{
 	cursor:pointer;
 }
 
+
+.related_events{
+	position:absolute;
+	width:20%;
+	margin-left:20%;
+	margin-top:10%;
+}
+
+	
+.related_events p{
+	font-size:1.5em;
+	color:#A8A8A8;
+	margin-left:7%;
+}
 /******** your events page ******/
 
 #user_event{
 	height:70px;
 	border-radius:50%;
-	width:70px;
+	width:3000%;
 	background-color:#4FC3DE;
 	margin-left:195px;
 	margin-top:10px;
@@ -384,7 +418,7 @@ span{
 	text-align:center;
 	font-size:1.5em;
 	height:70px;
-	width:70px;
+	width:400%;
 	border-radius:50%;
 }
 

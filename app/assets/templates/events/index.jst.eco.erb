@@ -82,22 +82,26 @@
 							<p> skype </p>
 						</div>
 						</a>
-
+				</div> <!--chat_space-->
 						<div class="end_float"></div>
-						
+				<div class="related_events">
 						<%% if event.get('related_event_1') != null: %>
-							<p style="position:relative;left:250px;top:-200px;"> <%%= event.get('related_event_1') %> </p>
+							
 							<img class="<%%= event.get('related_event_1') %>" style="cursor: pointer;position:relative;left:250px;top:-200px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_1') %> alt="event_photo">
+							<p style="position:relative;left:250px;top:-200px;">related event</p>
+							
 						<%% end %>
 						<%% if event.get('related_event_2') != null: %>
-							<p style="position:relative;left:450px;top:-430px;"> <%%= event.get('related_event_2') %> </p>
+							
 							<img class="<%%= event.get('related_event_2') %>" style="cursor: pointer;position:relative;left:450px;top:-430px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_2') %> alt="event_photo">
+							<p style="position:relative;left:450px;top:-430px;">related event</p>
 						<%% end %>
 						<%% if event.get('related_event_3') != null: %>
-							<p style="position:relative;left:650px;top:-660px;"> <%%= event.get('related_event_3') %> </p>
+						
 							<img class="<%%= event.get('related_event_3') %>" style="cursor: pointer;position:relative;left:650px;top:-660px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_3') %> alt="event_photo">
+								<p style="position:relative;left:650px;top:-660px;"> related event</p>						
 						<%% end %>
-					</div> <!--chat_space-->
+				</div> <!--related_events-->
 
 				</div> <!--event_info-->
 			</div> <!---event_box-->
