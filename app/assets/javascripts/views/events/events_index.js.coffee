@@ -17,7 +17,12 @@ class Looper.Views.EventsIndex extends Backbone.View
 		@p4Name = "Sarah"
 
 	render: ->
-		$(@el).html(@template(events: @collection))
+		console.log(@collection.groupBy((event)-> return event.get('date')))
+		for eventKey, eventList of @collection.groupBy((event)-> return event.get('date'))
+			console.log(eventList)
+			for event in eventList
+				console.log(event.get('name'))
+		$(@el).html(@template(events: @collection.groupBy((event)-> return event.get('date'))))
 		this
 
 	events:

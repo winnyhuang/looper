@@ -16,13 +16,13 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: -70px 5px 60px;
+	margin: 0 0 60px;
 	padding: 0;
-	z-index:0;
 	*zoom: 1;
 }
 
 .bx-wrapper img {
+	width: 100%;
 	display: block;
 }
 
@@ -30,12 +30,12 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 0px #ccc;
-	-webkit-box-shadow: 0 0 0px #ccc;
-	box-shadow: 0 0 0px #ccc;
-	border: solid #transparent 5px;
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border: solid #fff 5px;
 	left: -5px;
-	background: transparent;
+	background: #fff;
 }
 
 .bx-wrapper .bx-pager,

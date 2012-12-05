@@ -29,87 +29,166 @@
 </div>
 
 <div id="end_float"></div>
+<%% sliderCount = 0 %>
+<%% for eventKey, eventList of @events: %>
+	<ul id=<%%= 'slider' + sliderCount %> class="bxslider">
+	<%% for event in eventList: %>
+		<%% show = event.get('show') %>
+		<%% if show: %>
+		<%% name = event.get('name') %>
+		<%% description = event.get('description') %>
+		<%% person = event.get('person') %>
+		<%% date = event.get('date') %>
+		<%% large_photo = event.get('large_photo') %>
+		<%% id = event.get('id') %>
+		
+		<li>
+		
+		<div id="profile" class="circle">
+			<img class="circle_img" src=<%%= event.get('person_photo') %> alt="person_photo">
+			<p><font> <%%= person %></font></p>
+		</div>
+		<div id="end_float"></div>
 
-<%% for event in @events.models: %>
-	<%% show = event.get('show') %>
-	<%% if show: %>
-	<%% name = event.get('name') %>
-	<%% description = event.get('description') %>
-	<%% person = event.get('person') %>
-	<%% date = event.get('date') %>
-	<%% large_photo = event.get('large_photo') %>
-	<%% id = event.get('id') %>
-	
-<div id="profile" class="circle">
-	<img class="circle_img" src=<%%= event.get('person_photo') %> alt="person_photo">
-	<p><font> <%%= person %></font></p>
-</div>
-<div id="end_float"></div>
-
-<div id="time" class="circle">
-	<p><p><%%= date.slice(11,13) %></p>
-	<span>AM</span></p>
-</div>
-
-<div class="end_float"></div>	
-	<div class="event_box" id="<%%= id %>">
-		<div>
-			<a data-toggle="modal" href="https://photos-1.dropbox.com/t/0/AABEmrPsfE5CZ0Mtd7RDsM7PlCWpDeil1Pbwfhmobm-L7A/10/12162130/jpeg/1024x768/2/1354003200/0/2/5877232981_16f5ee4aea_b.jpg/ZLn91qrcuzE5FjSNymUySXA9Obe8HYK_F1JPsdt2V4k" >
-				<img id="event_img" class="<%%= name %>" src=<%%= event.get('event_photo') %> alt="event_photo"> 
-				<p class="how_to"> click for full screen experience <p>
-			</a>
+		<div id="time" class="circle">
+			<p><p><%%= date.slice(11,13) %></p>
+			<span>AM</span></p>
 		</div>
 
-		<div class ="event_info">
-			<p class="year"><%%= date.slice(0,4) %></p>	
-			<p class="experience"><%%= name %></p>	
-			<p class="info_origin"><%%= description %></p>
-
-
-			<div class="chat_space">
-				<p>Chat with <%%= person %></p>
-
-				<div class="chat">
-					<p> call </p>
-				</div>	
-
-				<div class="email">
-					<p> email </p>
+		<div class="end_float"></div>	
+			<div class="event_box" id="<%%= id %>">
+				<div>
+					<a data-toggle="modal" href="https://photos-1.dropbox.com/t/0/AABEmrPsfE5CZ0Mtd7RDsM7PlCWpDeil1Pbwfhmobm-L7A/10/12162130/jpeg/1024x768/2/1354003200/0/2/5877232981_16f5ee4aea_b.jpg/ZLn91qrcuzE5FjSNymUySXA9Obe8HYK_F1JPsdt2V4k" >
+						<img id="event_img" class="<%%= name %>" src=<%%= event.get('event_photo') %> alt="event_photo"> 
+						<p class="how_to"> click for full screen experience <p>
+					</a>
 				</div>
 
-				<div class="email">
-					<p> skype </p>
-				</div>
+				<div class ="event_info">
+					<p class="year"><%%= date.slice(0,4) %></p>	
+					<p class="experience"><%%= name %></p>	
+					<p class="info_origin"><%%= description %></p>
 
-				<div class="end_float"></div>
-				
-				<p style="position:relative;left:250px;top:-200px;"> <%%= event.get('related_event_1') %> </p>
-				<img class="<%%= event.get('related_event_1') %>" style="position:relative;left:250px;top:-200px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_1') %> alt="event_photo">
-				<p style="position:relative;left:450px;top:-430px;"> <%%= event.get('related_event_2') %> </p>
-				<img style="position:relative;left:450px;top:-430px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_2') %> alt="event_photo">
-				<p> <%%= event.get('related_event_3') %> </p>
-				<img style="position:relative;left:650px;top:-660px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_3') %> alt="event_photo">
-			</div> <!--chat_space-->
 
-		</div> <!--event_info-->
-	</div> <!---event_box-->
+					<div class="chat_space">
+						<p>Chat with <%%= person %></p>
 
-</div>
-<div class="end_float"></div>
+						<div class="chat">
+							<p> call </p>
+						</div>	
 
+						<div class="email">
+							<p> email </p>
+						</div>
+
+						<div class="email">
+							<p> skype </p>
+						</div>
+
+						<div class="end_float"></div>
+						
+						<%% if event.get('related_event_1') != null: %>
+							<p style="position:relative;left:250px;top:-200px;"> <%%= event.get('related_event_1') %> </p>
+							<img class="<%%= event.get('related_event_1') %>" style="position:relative;left:250px;top:-200px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_1') %> alt="event_photo">
+						<%% end %>
+						<%% if event.get('related_event_2') != null: %>
+							<p style="position:relative;left:450px;top:-430px;"> <%%= event.get('related_event_2') %> </p>
+							<img class="<%%= event.get('related_event_2') %>" style="position:relative;left:450px;top:-430px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_2') %> alt="event_photo">
+						<%% end %>
+						<%% if event.get('related_event_3') != null: %>
+							<p style="position:relative;left:650px;top:-660px;"> <%%= event.get('related_event_3') %> </p>
+							<img class="<%%= event.get('related_event_3') %>" style="position:relative;left:650px;top:-660px;width:200px;height200px;" class="<%%= name %>" src=<%%= event.get('related_photo_3') %> alt="event_photo">
+						<%% end %>
+					</div> <!--chat_space-->
+
+				</div> <!--event_info-->
+			</div> <!---event_box-->
+
+		</div>
+		<div class="end_float"></div>
+
+		<%% end %>
+		</li>
 	<%% end %>
+	</ul>
+	
+	<div id=<%%= 'pager' + sliderCount %>>
+		<%% eventIndex = 0 %>
+		<%% for event in eventList: %>
+			<a data-slide-index=<%%= eventIndex %> href=""><img src="<%%= event.get('person_photo') %>" /></a>
+			<%% eventIndex++ %>
+		<%% end %>
+	</div>
+	<%% sliderCount++ %>
 <%% end %>
 
 <div class="end_float"></div>
 
 
 <script>
+	var slider0, slider1, slider2, slider2;
+	function loadSlider(){
+		slider0 = $('#slider0').bxSlider({
+			mode: 'fade',
+			pagerCustom: '#pager0'
+		});
+		slider1 = $('#slider1').bxSlider({
+			mode: 'fade',
+			pagerCustom: '#pager1'
+		});
+		slider2 = $('#slider2').bxSlider({
+			mode: 'fade',
+			pagerCustom: '#pager2'
+		});
+		slider3 = $('#slider3').bxSlider({
+			mode: 'fade',
+			pagerCustom: '#pager3'
+		});
+	}
+	
+	loadSlider();
+	
 	for (i=1; i<10; i++){
 		var klass = "." + i
 		$(klass).on('click', this, function(event){
 				var myClass = $(this).attr("class");
 				var id = "#" + myClass
 				alert(id);
+				console.log("test");
+				switch(id)
+				{
+				case '#1':
+					slider0.goToSlide(0);
+					break;
+				case '#2':
+					slider1.goToSlide(0);
+					break;
+				case '#3':
+					slider1.goToSlide(1);
+					break;
+				case '#4':
+					slider1.goToSlide(2);
+					break;
+				case '#5':
+					slider1.goToSlide(3);
+					break;
+				case '#6':
+					slider2.goToSlide(0);
+					break;
+				case '#7':
+					console.log("this is a test");
+					slider2.goToSlide(1);
+					break;
+				case '#8':
+					slider2.goToSlide(2);
+					break;
+				case '#9':
+					console.log("You're not supposed to be here...");
+					slider2.goToSlide(3);
+					break;
+				default:
+					break;
+				}
 				$("html, body").animate({ scrollTop: $(id).offset().top }, 1000);
 		});
 	}
