@@ -76,7 +76,7 @@ header{
 
 .vertical_line{
 	border-left:2px solid #4FC3DE;
-	height: 3083px;
+	height: 2910px;
 	position:absolute;
 	left:230px;
 	z-index:-100;
@@ -114,7 +114,6 @@ header{
 #profile{
 	margin-left:195px;
 	margin-top:300px;
-	cursor:pointer;
 }
 
 #profile p{
@@ -182,6 +181,7 @@ header{
 	border-radius:3px;
 	position: relative;
 	left: 360px;
+	cursor: pointer;
 }
 
 
@@ -418,4 +418,8 @@ span{
 
 #pager3{
 	padding-left: 650px;;
+}
+
+.6 {
+	cursor: pointer;
 }
