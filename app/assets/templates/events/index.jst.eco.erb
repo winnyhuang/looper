@@ -65,17 +65,21 @@
 					<div class="chat_space">
 						<p>Chat with <%%= person %></p>
 
+						<a id="single_image" href=<%%= event.get('event_photo')%>>
 						<div class="chat">
 							<p> call </p>
-						</div>	
+						</div>
+						</a>
 
 						<div class="email">
 							<p> email </p>
 						</div>
-
+						
+						<a id="single_image" href=<%%= event.get('event_photo')%>>
 						<div class="email">
 							<p> skype </p>
 						</div>
+						</a>
 
 						<div class="end_float"></div>
 						
@@ -184,8 +188,23 @@
 	$(document).ready(function() {
 		$("a#single_image").fancybox({
 			'width' : 1000,
-			'height' : 1000
+			'height' : 1000,
+			'padding' : 0,
+			'margin' : 0,
+			'onStart': function() {
+			$('#fancybox-outer').css({'background':'transparent'});
+			$('#fancybox-bg-n,#fancybox-bg-ne,#fancybox-bg-e,#fancybox-bg-se,#fancybox-bg-s,#fancybox-bg-sw,#fancybox-bg-w,#fancybox-bg-nw')
+			.css({'background-image':'none'});
+			
+			$('#fancybox-content').css({'border-width': 0});
+			}
 		});
 	});
 	
 </script>	
+
+<style type="text/css">
+#fancybox-content {
+ border-width: 0;
+}
+</style>
