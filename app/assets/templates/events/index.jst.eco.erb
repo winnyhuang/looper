@@ -50,7 +50,7 @@
 		<div class="end_float"></div>	
 			<div class="event_box" id="<%%= id %>">
 				<div>
-					<a id="single_image" href=<%%= event.get('large_photo') %>>
+					<a id="single_image" href=<%%= event.get('large_photo') %> title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
 						<img id="event_img" class="<%%= name %>" src=<%%= event.get('event_photo') %> alt="event_photo"> 
 						<p class="how_to"> click for full screen experience <p>
 					</a>
@@ -65,15 +65,17 @@
 					<div class="chat_space">
 						<p>Chat with <%%= person %></p>
 
-						<a id="single_image" href=<%%= event.get('event_photo')%>>
+						<a href="http://www.google.com/calendar/" target="_blank">
 						<div class="chat">
-							<p> call </p>
+							<p> invite </p>
 						</div>
 						</a>
 
+						<a href="http://mail.google.com" target="_blank">
 						<div class="email">
 							<p> email </p>
 						</div>
+						</a>
 						
 						<a id="single_image" href="http://i1302.photobucket.com/albums/ag127/nullinference/Looper/contact_skype.png">
 						<div class="email">
@@ -190,20 +192,9 @@
 			'height' : 1000,
 			'padding' : 0,
 			'margin' : 0,
-			'onStart': function() {
-			$('#fancybox-outer').css({'background':'transparent'});
-			$('#fancybox-bg-n,#fancybox-bg-ne,#fancybox-bg-e,#fancybox-bg-se,#fancybox-bg-s,#fancybox-bg-sw,#fancybox-bg-w,#fancybox-bg-nw')
-			.css({'background-image':'none'});
-			
-			$('#fancybox-content').css({'border-width': 0});
-			}
+			'titlePosition' : 'inside',
 		});
 	});
 	
 </script>	
 
-<style type="text/css">
-#fancybox-content {
- border-width: 0;
-}
-</style>
