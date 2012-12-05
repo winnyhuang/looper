@@ -76,7 +76,7 @@ header{
 
 .vertical_line{
 	border-left:2px solid #4FC3DE;
-	height: 5800px;
+	height: 3083px;
 	position:absolute;
 	left:230px;
 	z-index:-100;
@@ -402,4 +402,20 @@ span{
 
 #age{
 	display:block;
+}
+
+#pager0{
+	padding-left: 650px;;
+}
+
+#pager1{
+	padding-left: 650px;;
+}
+
+#pager2{
+	padding-left: 650px;;
+}
+
+#pager3{
+	padding-left: 650px;;
 }
